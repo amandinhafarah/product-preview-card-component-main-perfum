@@ -7,16 +7,16 @@
 body {
     background-color: hsl(30, 38%, 92%);
     font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
 }
 
 main {
     background-color: white;
     border-radius: 0.625rem;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     max-width: 600px;
     margin: auto;
-    margin-top: 3.8em;
     overflow: hidden; /* Garante que o conteúdo que ultrapassar as bordas do contêiner seja ocultado, mantendo o design limpo e organizado */
 }
 
@@ -120,7 +120,7 @@ button::before {
     color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
     main {
         flex-direction: column; /*Altera a direção dos elementos para coluna em telas menores*/
         max-width: 350px; /* Ajusta a largura máxima para se adequar a telas menores */
