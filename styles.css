@@ -7,7 +7,20 @@
 body {
     background-color: hsl(30, 38%, 92%);
     font-family: 'Montserrat', sans-serif;
-    padding-top: 50px;
+    /* Ativa o Flexbox para alinhar o card */
+    display: flex;
+    flex-direction: column;
+    /* Organiza o card e a div attribution em pé */
+
+    /* Centraliza tudo na tela */
+    justify-content: center;
+    /* Centraliza na vertical (em pé) */
+    align-items: center;
+    /* Centraliza na horizontal (deitado) */
+
+    /* 🪄 O SEGREDO QUE ESTÁ FALTANDO: */
+    min-height: 100vh;
+    /* Força o corpo do site a ter a altura inteira do monitor */
 }
 
 main {
@@ -17,7 +30,8 @@ main {
     align-items: center;
     max-width: 600px;
     margin: auto;
-    overflow: hidden; /* Garante que o conteúdo que ultrapassar as bordas do contêiner seja ocultado, mantendo o design limpo e organizado */
+    overflow: hidden;
+    /* Garante que o conteúdo que ultrapassar as bordas do contêiner seja ocultado, mantendo o design limpo e organizado */
 }
 
 .product-image {
@@ -122,17 +136,22 @@ button::before {
 
 @media (max-width: 600px) {
     main {
-        flex-direction: column; /*Altera a direção dos elementos para coluna em telas menores*/
-        max-width: 350px; /* Ajusta a largura máxima para se adequar a telas menores */
+        flex-direction: column;
+        /*Altera a direção dos elementos para coluna em telas menores*/
+        max-width: 350px;
+        /* Ajusta a largura máxima para se adequar a telas menores */
     }
 
     .product-image {
-        width: 100%; /* Ajusta a largura da imagem para ocupar toda a largura do contêiner em telas menores */
-        height: auto; /* Permite que a altura da imagem se ajuste automaticamente para manter a proporção */
+        width: 100%;
+        /* Ajusta a largura da imagem para ocupar toda a largura do contêiner em telas menores */
+        height: auto;
+        /* Permite que a altura da imagem se ajuste automaticamente para manter a proporção */
     }
 
     .product-info {
         width: 100%;
-        padding: 1rem; /* Ajusta o preenchimento do contêiner de informações para se adequar a telas menores */
+        padding: 1rem;
+        /* Ajusta o preenchimento do contêiner de informações para se adequar a telas menores */
     }
 }
